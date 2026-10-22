@@ -3,19 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>Pokédex e montagem de time</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-
+        <h1>Projeto Integrador - PokeAPI</h1>
+        <p>Descubra informações sobre seus Pokémon favoritos ou monte seu time dos sonhos!</p>
     </header>
     <main>
+        <section class="explore-pokemon">
+            <header>
+                <h2 id="consulta-titulo">Explore um Pokémon!</h2>
+                <p>Busque um Pokémon para consultar suas características e vantagens em batalha.</p>
+            </header>
 
+            <form class="pokemon-search" action="#" method="get">
+                <label for="pokemon">Nome do Pokémon ou Número da Pokédex</label>
+                <div class="search-controls">
+                    <input
+                        type="search"
+                        id="pokemon"
+                        name="pokemon"
+                        placeholder="Ex.: Pikachu ou Número da Pokédex"
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit">Buscar Pokémon</button>
+                </div>
+            </form>
+
+            <article class="pokemon-details">
+                <h3 id="detalhes-titulo">Informações do Pokémon</h3>
+                
+                <dl class="pokemon-stats">
+                    <div>
+                        <dt>História breve</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                    <div>
+                        <dt>Peso</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                    <div>
+                        <dt>Altura</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                    <div>
+                        <dt>Tipo</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                    <div>
+                        <dt>Fraco contra</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                    <div>
+                        <dt>Forte contra</dt>
+                        <dd>Aguardando consulta.</dd>
+                    </div>
+                </dl>
+            </article>
+        </section>
+
+        <section class="time-builder">
+            <header>
+                <h2 id="time-titulo">Monte seu time para as batalhas!</h2>
+                <p>Escolha 6 Pokémon para formar seu time.</p>
+            </header>
+
+            <form class="team-form" action="#" method="get">
+                <fieldset>
+                    <legend>Membros do time</legend>
+                    <div class="team-slots">
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-1">Pokémon 1</label>
+                                <input type="search" id="pokemon-1" name="pokemon-1" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-2">Pokémon 2</label>
+                                <input type="search" id="pokemon-2" name="pokemon-2" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-3">Pokémon 3</label>
+                                <input type="search" id="pokemon-3" name="pokemon-3" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-4">Pokémon 4</label>
+                                <input type="search" id="pokemon-4" name="pokemon-4" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-5">Pokémon 5</label>
+                                <input type="search" id="pokemon-5" name="pokemon-5" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                        <div class="team-slot">
+                            <div class="team-slot-image" aria-hidden="true">Foto</div>
+                            <div class="team-slot-fields">
+                                <label for="pokemon-6">Pokémon 6</label>
+                                <input type="search" id="pokemon-6" name="pokemon-6" placeholder="Nome do Pokémon" required>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
-        
+        <p>
+            Henzo F. Palamin. Taiane Kinocita. <br> Mariana Serrato. Isabela Alves. <br> &copy;  2026 Projeto Integrador - PokeAPI. <br> <!-- Colocar a logo da fib dps--> 
+        </p>
     </footer>
 </body>
 </html>
