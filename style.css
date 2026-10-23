@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+header {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
 body {
     min-width: 320px;
     line-height: 1.5;
@@ -25,8 +30,11 @@ footer {
     text-align: center;
 }
 
+header > p {
+    font-size: 1.25rem;
+}
 body > header {
-    padding: 2.5rem 1rem;
+    padding: 1rem;
     color: #fff;
     background-color: #b71a1a; 
 }
@@ -56,13 +64,17 @@ main > section > header {
     margin-bottom: 1.5rem;
 }
 
-h2,
+h1{
+    font-size: 4rem;
+}
+
 h3 {
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 h2 {
+    line-height: 1.2;
     margin-bottom: 0.5rem;
 }
 
@@ -138,6 +150,7 @@ button:hover {
     border: 1px solid #e0e6f0;
     border-radius: 0.5rem;
     background-color: #f8faff;
+    margin-bottom: 1.25rem;
 }
 
 .pokemon-stats dt {
@@ -145,7 +158,7 @@ button:hover {
 }
 
 .pokemon-stats dd {
-    color: #7c5b5b;
+    color: #5d5757;
 }
 
 .team-form fieldset {
@@ -197,7 +210,8 @@ button:hover {
 body > footer {
     padding: 1.5rem 1rem;
     color: #fff;
-    background-color: #4a1313;
+    background-color: #750f0f;
+    font-size: 0.875rem;
 }
 
 @media (max-width: 760px) {
