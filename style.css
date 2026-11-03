@@ -5,15 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
-:root {
-    color-scheme: light;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #202a44;
-    background-color: #f3f6fb;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -39,6 +31,7 @@ body {
     top: 1.5rem;
     right: 1.5rem;
 }
+
 .pokebola-container {
     position: relative;
     width: 100%;
@@ -57,10 +50,14 @@ body {
 
 header,
 footer {
+    font-family: "Prompt";
+    font-weight: 700;
     text-align: center;
 }
 
 header > p {
+    font-family: "Prompt";
+    font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
@@ -71,7 +68,12 @@ body > header {
 }
 
 body > header h1 {
-    margin-bottom: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pesquisador{
+    font-size: 20px;
 }
 
 main {
@@ -106,6 +108,7 @@ h3 {
 }
 
 h2 {
+    font-size: 25px;
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }
@@ -240,7 +243,7 @@ button:hover {
 }
 
 body > footer {
-    padding: 1.5rem 1rem;
+    padding: 0.75rem 2rem;
     color: #fff;
     background-color: #750f0f;
     font-size: 0.875rem;
