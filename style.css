@@ -111,12 +111,14 @@ main > section > header {
 h2 {
     font-size: 25px;
     line-height: 1.2;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: #1f2937;
 }
 
 h3 {
     line-height: 1.2;
+    font-weight: 600;
     margin-bottom: 1rem;
     font-size: 1.25rem;
     color: #1f2937;
@@ -124,7 +126,8 @@ h3 {
 
 label,
 legend {
-    font-weight: 700;
+    
+    font-weight: 600;
     color: #2b2b2b;
 }
 
@@ -179,7 +182,7 @@ button:hover {
 
 .rotulo-busca-pokemon {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .grupo-campo-busca {
@@ -312,7 +315,7 @@ button:hover {
 
 .rotulo-som-pokemon {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: #2b2b2b;
 }
 
