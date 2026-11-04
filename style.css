@@ -1,81 +1,77 @@
 @charset "UTF-8";
+
+/* ==========================================================================
+   Essa parte é referente à Importação de Fontes e Configurações Tipográficas
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+
 @font-face {
     font-family: 'Pokemon Hollow';
     src: url('fonts/Pokemon Hollow.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ==========================================================================
+   Essa parte é referente ao Reset Geral e Estilo Global da Página
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-}
-
 body {
     min-width: 320px;
     line-height: 1.5;
+    font-family: "Prompt", sans-serif;
+    background-color: #f7f9fb;
+    color: #2b2b2b;
 }
 
-.logo{
+/* ==========================================================================
+   Essa parte é referente ao Cabeçalho do Site (Header e Logotipo)
+   ========================================================================== */
+body > header {
+    position: relative;
+    padding: 1.5rem 1rem;
+    color: #ffffff;
+    background-color: #b71a1a;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(183, 26, 26, 0.2);
+}
+
+body > header h1 {
+    font-family: 'Pokemon Hollow', "Prompt", Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+}
+
+body > header > p {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho-logo {
     width: 85px;
     height: auto;
-    margin-bottom: 1rem;
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
 }
 
-.pokebola-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 1rem;
-}
-
-.pokebola{
-    width: 45px;
-    height: auto;
-    position: absolute;
-    margin-bottom: 1.5rem;
-    left: 0.3rem;
-    
-}
-
-header,
-footer {
-    font-family: "Prompt";
-    font-weight: 700;
-    text-align: center;
-}
-
-header > p {
-    font-family: "Prompt";
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-body > header {
-    padding: 1rem;
-    color: #fff;
-    background-color: #b71a1a; 
-}
-
-body > header h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.pesquisador{
-    font-size: 20px;
-}
-
+/* ==========================================================================
+   Essa parte é referente à Estrutura Geral e Layout Principal (Main e Seções)
+   ========================================================================== */
 main {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -89,46 +85,52 @@ main > section {
     padding: 1.5rem;
     border: 1px solid #eed9d9;
     border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0.5rem 1.5rem rgb(32 42 68 / 7%);
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1.5rem rgba(32, 42, 68, 0.07);
 }
 
 main > section > header {
     margin-bottom: 1.5rem;
 }
 
-h1{
-    font-family: 'Pokemon Hollow', Arial, Helvetica, sans-serif;
-    font-size: 3.5rem;
+/* Ícone decorativo da Pokébola no canto superior esquerdo da seção */
+.conteiner-pokebola {
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.icone-pokebola {
+    width: 45px;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   Essa parte é referente à Tipografia e Hierarquia de Títulos (h2, h3, rótulos)
+   ========================================================================== */
+h2 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
 }
 
 h3 {
     line-height: 1.2;
     margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 25px;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-}
-
-.pokemon-search,
-.team-form {
-    display: grid;
-    gap: 0.75rem;
+    font-size: 1.25rem;
+    color: #1f2937;
 }
 
 label,
 legend {
     font-weight: 700;
+    color: #2b2b2b;
 }
 
-.search-controls {
-    display: flex;
-    gap: 0.5rem;
-}
-
+/* ==========================================================================
+   Essa parte é referente aos Campos de Entrada (Inputs) e Botões Interativos
+   ========================================================================== */
 input,
 button {
     min-height: 2.75rem;
@@ -141,8 +143,10 @@ input {
     min-width: 0;
     padding: 0.625rem 0.75rem;
     border: 1px solid #aeb9cc;
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: left;
+    color: #1f2937;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input:focus-visible,
@@ -152,75 +156,113 @@ button:focus-visible {
 }
 
 button {
-    padding: 0.625rem 1rem;
+    padding: 0.625rem 1.25rem;
     border: 0;
-    color: #fff;
+    color: #ffffff;
     background-color: #b71a1a;
     cursor: pointer;
     font-weight: 700;
+    transition: background-color 0.2s;
 }
 
 button:hover {
     background-color: #a21616;
 }
 
-.pokemon-details {
+/* ==========================================================================
+   Essa parte é referente ao Formulário de Busca de Pokémon
+   ========================================================================== */
+.formulario-busca-pokemon {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.rotulo-busca-pokemon {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.grupo-campo-busca {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Essa parte é referente ao Painel de Detalhes e Estatísticas do Pokémon
+   ========================================================================== */
+.painel-detalhes-pokemon {
     margin-top: 1.75rem;
 }
 
-.empty-state {
+.estado-vazio {
     margin-bottom: 1rem;
     color: #7c5b5b;
 }
 
-.pokemon-stats {
+.grade-estatisticas-pokemon {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
 }
 
-.pokemon-stats > div,
-.team-slot {
+.grade-estatisticas-pokemon > div {
     padding: 0.75rem;
     border: 1px solid #e0e6f0;
     border-radius: 0.5rem;
     background-color: #f8faff;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
-.pokemon-stats dt {
+.grade-estatisticas-pokemon dt {
     font-weight: 700;
+    color: #b71a1a;
+    margin-bottom: 0.25rem;
 }
 
-.pokemon-stats dd {
+.grade-estatisticas-pokemon dd {
     color: #5d5757;
 }
 
-.team-form fieldset {
+/* ==========================================================================
+   Essa parte é referente ao Formulário de Montar Time (Team Builder)
+   ========================================================================== */
+.secao-montar-time .formulario-time {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.formulario-time fieldset {
     min-width: 0;
     padding: 1rem;
     border: 1px solid #d9e0ee;
     border-radius: 0.75rem;
+    background-color: #fafbfc;
 }
 
-.team-form legend {
-    padding: 0 0.35rem;
+.formulario-time legend {
+    padding: 0 0.4rem;
+    font-size: 1rem;
+    color: #b71a1a;
 }
 
-.team-slots {
+.grade-membros-time {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.team-slot {
+.cartao-membro-time {
     display: grid;
     grid-template-columns: 5.5rem minmax(0, 1fr);
     align-items: center;
     gap: 0.875rem;
+    padding: 0.75rem;
+    border: 1px solid #e0e6f0;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
 }
 
-.team-slot-image {
+.foto-membro-time {
     display: grid;
     width: 5rem;
     aspect-ratio: 1;
@@ -228,33 +270,156 @@ button:hover {
     border: 1px dashed #aeb9cc;
     border-radius: 0.5rem;
     color: #7c5b5b;
-    background-color: #fff;
+    background-color: #f8faff;
     font-size: 0.875rem;
 }
 
-.team-slot-fields {
+.campos-membro-time {
     display: grid;
     gap: 0.4rem;
-    
 }
 
-.team-form > button {
+.tipo-membro-time {
+    font-size: 0.875rem;
+    color: #5d5757;
+    margin-top: 0.15rem;
+    font-weight: 500;
+}
+
+.tipo-membro-time strong {
+    color: #b71a1a;
+    font-weight: 700;
+}
+
+.formulario-time > button {
     justify-self: start;
+    margin-top: 0.5rem;
 }
 
+/* ==========================================================================
+   Essa parte é referente à Seção "Fale comigo!" (Sons e Vozes dos Pokémon)
+   ========================================================================== */
+.secao-fale-comigo {
+    grid-column: 1 / -1;
+    width: min(100%, 36rem);
+    justify-self: center;
+}
+
+.formulario-som-pokemon {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.rotulo-som-pokemon {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.painel-som-pokemon {
+    margin-top: 1.75rem;
+}
+
+.conteudo-som-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #e0e6f0;
+    border-radius: 0.75rem;
+    background-color: #f8faff;
+}
+
+.foto-som-pokemon {
+    display: grid;
+    place-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: 2px dashed #aeb9cc;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    color: #7c5b5b;
+    font-size: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.foto-som-pokemon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.nome-som-pokemon {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: capitalize;
+}
+
+.botao-som-pokemon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 8rem;
+    min-height: 2.75rem;
+    padding: 0.625rem 1.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: #b71a1a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(183, 26, 26, 0.25);
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.botao-som-pokemon:hover {
+    background-color: #a21616;
+    box-shadow: 0 6px 14px rgba(183, 26, 26, 0.35);
+}
+
+.botao-som-pokemon:active {
+    transform: translateY(1px);
+}
+
+.botao-som-pokemon:focus-visible {
+    outline: 3px solid #f0b429;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Essa parte é referente ao Rodapé do Site (Footer e Créditos da Equipe)
+   ========================================================================== */
 body > footer {
-    padding: 0.75rem 2rem;
-    color: #fff;
+    padding: 1rem 2rem;
+    color: #ffffff;
     background-color: #750f0f;
     font-size: 0.875rem;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 2.5rem;
 }
 
+/* ==========================================================================
+   Essa parte é referente à Responsividade para Tablets e Telas Médias (<= 760px)
+   ========================================================================== */
 @media (max-width: 760px) {
     main {
         grid-template-columns: 1fr;
     }
 }
 
+/* ==========================================================================
+   Essa parte é referente à Responsividade para Smartphones (<= 480px)
+   ========================================================================== */
 @media (max-width: 480px) {
     main {
         width: min(100% - 1rem, 36rem);
@@ -266,25 +431,31 @@ body > footer {
         padding: 1rem;
     }
 
-    .search-controls {
+    .cabecalho-logo {
+        position: static;
+        display: block;
+        margin: 0 auto 0.75rem auto;
+    }
+
+    .grupo-campo-busca {
         flex-direction: column;
     }
 
-    .search-controls button,
-    .team-form > button {
+    .grupo-campo-busca button,
+    .formulario-time > button {
         width: 100%;
     }
 
-    .pokemon-stats {
+    .grade-estatisticas-pokemon {
         grid-template-columns: 1fr;
     }
 
-    .team-slot {
+    .cartao-membro-time {
         grid-template-columns: 4rem minmax(0, 1fr);
         gap: 0.625rem;
     }
 
-    .team-slot-image {
+    .foto-membro-time {
         width: 4rem;
     }
 }

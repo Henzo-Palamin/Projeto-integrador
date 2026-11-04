@@ -11,26 +11,26 @@
 <body>
     <header>
         <h1>KantoDex</h1>
-        <img src="img/pokedex.png" alt="Logo do KantoDex" class="logo">
+        <img src="img/pokedex.png" alt="Logo do KantoDex" class="cabecalho-logo">
         <p>Seu auxiliador completo para explorar a região de Kanto e seus Pokémon!</p>
         <p>Divirta-se com as funcionalidades do site usando seus Pokemons favoritos !</p>
     </header>
     <main>
-        <section class="explore-pokemon">
+        <section class="secao-explorar-pokemon">
             <header>
-                <div class="pokebola-container">
-                    <img src="img/pokebola.png" alt="Uma Pokébola" class="pokebola">
+                <div class="conteiner-pokebola">
+                    <img src="img/pokebola.png" alt="Uma Pokébola" class="icone-pokebola">
                 </div>
-                <h2 id="consulta-titulo">Explore um Pokémon!</h2>
+                <h2 id="titulo-explorar-pokemon">Explore um Pokémon!</h2>
                 <p>Busque um Pokémon para consultar suas características e vantagens em batalha.</p>
             </header>
 
-            <form class="pokemon-search" action="#" method="get">
-                <label class="pesquisador" for="pokemon">Nome do Pokémon ou Número da Pokédex</label>
-                <div class="search-controls">
+            <form class="formulario-busca-pokemon" action="#" method="get">
+                <label class="rotulo-busca-pokemon" for="campo-busca-pokemon">Nome do Pokémon ou Número da Pokédex</label>
+                <div class="grupo-campo-busca">
                     <input
                         type="search"
-                        id="pokemon"
+                        id="campo-busca-pokemon"
                         name="pokemon"
                         placeholder="Ex.: Pikachu ou Número da Pokédex"
                         autocomplete="off"
@@ -40,10 +40,10 @@
                 </div>
             </form>
 
-            <article class="pokemon-details">
-                <h3 id="detalhes-titulo">Informações do Pokémon</h3>
+            <article class="painel-detalhes-pokemon">
+                <h3 id="titulo-detalhes-pokemon">Informações do Pokémon</h3>
                 
-                <dl class="pokemon-stats">
+                <dl class="grade-estatisticas-pokemon">
                     <div>
                         <dt>Descrição</dt>
                         <dd>Aguardando consulta.</dd>
@@ -72,64 +72,109 @@
             </article>
         </section>
 
-        <section class="time-builder">
+        <section class="secao-montar-time">
             <header>
-                <div class="pokebola-container">
-                    <img src="img/pokebola.png" alt="Uma Pokébola" class="pokebola">
+                <div class="conteiner-pokebola">
+                    <img src="img/pokebola.png" alt="Uma Pokébola" class="icone-pokebola">
                 </div>
-                <h2 id="time-titulo">Monte seu time para as batalhas!</h2>
+                <h2 id="titulo-montar-time">Monte seu time para as batalhas!</h2>
                 <p>Escolha 6 Pokémon para formar seu time.</p>
             </header>
 
-            <form class="team-form" action="#" method="get">
+            <form class="formulario-time" action="#" method="get">
                 <fieldset>
                     <legend>Membros do time</legend>
-                    <div class="team-slots">
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-1">Pokémon 1</label>
-                                <input type="search" id="pokemon-1" name="pokemon-1" placeholder="Nome do Pokémon" required>
+                    <div class="grade-membros-time">
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-1">Pokémon 1</label>
+                                <input type="search" id="membro-pokemon-1" name="membro-pokemon-1" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-2">Pokémon 2</label>
-                                <input type="search" id="pokemon-2" name="pokemon-2" placeholder="Nome do Pokémon" required>
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-2">Pokémon 2</label>
+                                <input type="search" id="membro-pokemon-2" name="membro-pokemon-2" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-3">Pokémon 3</label>
-                                <input type="search" id="pokemon-3" name="pokemon-3" placeholder="Nome do Pokémon" required>
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-3">Pokémon 3</label>
+                                <input type="search" id="membro-pokemon-3" name="membro-pokemon-3" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-4">Pokémon 4</label>
-                                <input type="search" id="pokemon-4" name="pokemon-4" placeholder="Nome do Pokémon" required>
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-4">Pokémon 4</label>
+                                <input type="search" id="membro-pokemon-4" name="membro-pokemon-4" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-5">Pokémon 5</label>
-                                <input type="search" id="pokemon-5" name="pokemon-5" placeholder="Nome do Pokémon" required>
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-5">Pokémon 5</label>
+                                <input type="search" id="membro-pokemon-5" name="membro-pokemon-5" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
-                        <div class="team-slot">
-                            <div class="team-slot-image" aria-hidden="true">Foto</div>
-                            <div class="team-slot-fields">
-                                <label for="pokemon-6">Pokémon 6</label>
-                                <input type="search" id="pokemon-6" name="pokemon-6" placeholder="Nome do Pokémon" required>
+                        <div class="cartao-membro-time">
+                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="campos-membro-time">
+                                <label for="membro-pokemon-6">Pokémon 6</label>
+                                <input type="search" id="membro-pokemon-6" name="membro-pokemon-6" placeholder="Nome do Pokémon" required>
+                                <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
                         </div>
                     </div>
                 </fieldset>
             </form>
+        </section>
+
+        <section class="secao-fale-comigo">
+            <header>
+                <div class="conteiner-pokebola">
+                    <img src="img/pokebola.png" alt="Uma Pokébola" class="icone-pokebola">
+                </div>
+                <h2 id="titulo-fale-comigo">Fale comigo!</h2>
+                <p>Busque um Pokémon para visualizar sua foto e ouvir o som característico dele em batalha.</p>
+            </header>
+
+            <form class="formulario-som-pokemon" action="#" method="get">
+                <label class="rotulo-som-pokemon" for="campo-som-pokemon">Nome do Pokémon ou Número da Pokédex</label>
+                <div class="grupo-campo-busca">
+                    <input
+                        type="search"
+                        id="campo-som-pokemon"
+                        name="pokemon-som"
+                        placeholder="Ex.: Pikachu ou Número da Pokédex"
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit">Buscar Pokémon</button>
+                </div>
+            </form>
+
+            <article class="painel-som-pokemon">
+                <h3 id="titulo-som-pokemon">Voz do Pokémon</h3>
+
+                <div class="conteudo-som-pokemon">
+                    <div class="foto-som-pokemon" aria-hidden="true">
+                        Foto
+                    </div>
+                    <p class="nome-som-pokemon">Aguardando Pokemon.</p>
+                    <button type="button" class="botao-som-pokemon" id="botao-tocar-som">
+                        Som
+                    </button>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
