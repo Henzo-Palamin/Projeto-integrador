@@ -46,27 +46,27 @@
                 <dl class="grade-estatisticas-pokemon">
                     <div>
                         <dt>Descrição</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-descricao">Aguardando consulta.</dd>
                     </div>
                     <div>
                         <dt>Peso</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-peso">Aguardando consulta.</dd>
                     </div>
                     <div>
                         <dt>Altura</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-altura">Aguardando consulta.</dd>
                     </div>
                     <div>
                         <dt>Tipo</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-tipo">Aguardando consulta.</dd>
                     </div>
                     <div>
                         <dt>Fraco contra</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-fraquezas">Aguardando consulta.</dd>
                     </div>
                     <div>
                         <dt>Eficaz contra</dt>
-                        <dd>Aguardando consulta.</dd>
+                        <dd id="pokemon-eficaz">Aguardando consulta.</dd>
                     </div>
                 </dl>
             </article>
@@ -86,15 +86,19 @@
                     <legend>Membros do time</legend>
                     <div class="grade-membros-time">
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-1">Pokémon 1</label>
                                 <input type="search" id="membro-pokemon-1" name="membro-pokemon-1" placeholder="Nome do Pokémon" required>
                                 <p class="tipo-membro-time"><strong>Tipo:</strong> Aguardando consulta.</p>
                             </div>
-                        </div>
+                    </div>
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-2">Pokémon 2</label>
                                 <input type="search" id="membro-pokemon-2" name="membro-pokemon-2" placeholder="Nome do Pokémon" required>
@@ -102,7 +106,9 @@
                             </div>
                         </div>
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-3">Pokémon 3</label>
                                 <input type="search" id="membro-pokemon-3" name="membro-pokemon-3" placeholder="Nome do Pokémon" required>
@@ -110,7 +116,9 @@
                             </div>
                         </div>
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-4">Pokémon 4</label>
                                 <input type="search" id="membro-pokemon-4" name="membro-pokemon-4" placeholder="Nome do Pokémon" required>
@@ -118,7 +126,9 @@
                             </div>
                         </div>
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                            <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-5">Pokémon 5</label>
                                 <input type="search" id="membro-pokemon-5" name="membro-pokemon-5" placeholder="Nome do Pokémon" required>
@@ -126,7 +136,9 @@
                             </div>
                         </div>
                         <div class="cartao-membro-time">
-                            <div class="foto-membro-time" aria-hidden="true">Foto</div>
+                           <div class="foto-membro-time">
+                                <img class="imagem-membro-time" src="" alt="" hidden>
+                            </div>
                             <div class="campos-membro-time">
                                 <label for="membro-pokemon-6">Pokémon 6</label>
                                 <input type="search" id="membro-pokemon-6" name="membro-pokemon-6" placeholder="Nome do Pokémon" required>
@@ -166,8 +178,8 @@
                 <h3 id="titulo-som-pokemon">Voz do Pokémon</h3>
 
                 <div class="conteudo-som-pokemon">
-                    <div class="foto-som-pokemon" aria-hidden="true">
-                        Foto
+                    <div class="foto-som-pokemon">
+                        <img id="imagem-som-pokemon" src="" alt="" hidden>
                     </div>
                     <p class="nome-som-pokemon">Aguardando Pokemon.</p>
                     <button type="button" class="botao-som-pokemon" id="botao-tocar-som">
